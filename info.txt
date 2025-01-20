@@ -1,0 +1,8 @@
+W celu uruchomienia zadania zainstaluj:
+npm install csv-parse
+
+W zadaniu zaproponowałem wyświetlanie danych poprzez wypisanie ich w konsoli.
+Innym sposobem mogło by być zapisanie ich do pliku tekstowego w celu łatwiejszego odczytania danych bądź bardzo prostej
+aplikacji webowej w celu ładniejszego pokazania danych.
+
+Kod programu znajduję się w pliku zadanie.js a zapytanie SQL w pliku zapytanieSQL.txt

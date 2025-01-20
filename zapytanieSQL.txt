@@ -1,0 +1,28 @@
+Na potrzeby tego przykładu przyjmujemy, że nazwa naszej tabeli to company_stock_prices o aliasie csp.
+Z racji że nie było nadanych nazw kolumn w pliku csv zostały one nadane według kolejności: id, date, value, currency.
+Daty przyjmujemy tutaj dla całego zakresu danych.
+
+SELECT
+	csp.row_id AS "id",
+    csp.date AS "date",
+	csp.stock_price AS "value",
+	csp.stock_currency AS "currency"
+FROM
+	company_stock_prices csp
+WHERE
+	csp.date BETWEEN '2024-01-01' AND '2024-12-31'
+ORDER BY
+	csp.date ASC;
+
+Do naszego zadania możemy skrócić polecenie, ponieważ nie potrzebujemy wszystkich kolumn z tej tabeli.
+Dlatego pobieramy tylko kolumny które nas interesują, w tym przypadku potrzebujemy tylko datę i cenę.
+
+SELECT
+    csp.date AS "date",
+	csp.stock_price AS "value",
+FROM
+	company_stock_prices csp
+WHERE
+	csp.date BETWEEN '2024-01-01' AND '2024-12-31'
+ORDER BY
+	csp.date ASC;
